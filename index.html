@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -29,15 +30,23 @@
     </header>
 
     <!-- primera sección de la pagina -->
-    <section class="seccion-portada">
-        <div class="portada">
-            <img class="foto" src="img/portada.jpg" alt="portada">
+      <div id="portada" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/portada-1.jpg" class="d-block w-100 foto" alt="portada">
+          </div>
+          <div class="carousel-item">
+            <img src="img/portada-2.jpg" class="d-block w-100 foto" alt="portada">
+          </div>
+          <div class="carousel-item">
+            <img src="img/portada-3.jpg" class="d-block w-100 foto" alt="portada">
+          </div>
         </div>
-    </section>
+      </div>
 
 
     <section class="seccion-principal">
-        <div class="presentacion">
+        <div class="presentacion container">
             <h1 class="titulo">Bienvenidos a ProyectoDI</h1>
             <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas dolore sit vero, rem dignissimos dolor, eius iste nesciunt tempore odit suscipit porro iusto odio aut quia recusandae quaerat magnam.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. At qui blanditiis optio quidem fuga, aperiam aliquid velit aliquam eum sequi? Sapiente maiores praesentium eius omnis tenetur doloremque numquam itaque totam!
@@ -46,7 +55,7 @@
     </section>
 
     <section class="seccion-desing">  
-        <div class="como-trabajamos">
+        <div class="como-trabajamos container">
             <h1 class="titulo">Te contamos como trabajamos</h1>
             <p class="parrafo">Tenemos 3 puntos importantes en nuestra metodología de trabajo</p>
             <div class="contenedor-desing">
@@ -73,29 +82,31 @@
     </section>
 
     <section class="seccion-equipo">
-        <div class="text-equipo">
-            <h1 class="titulo">Nuestro equipo</h1>
-            <p class="parrafo">Nuestro grupo de trabajo que darle vida a nuestros diseños</p>
-        </div>
-        <div class="nuestro-equipo">
-                <div class="equipo-item">
-                    <img src="./img/perfil2.jpg" alt="perfil">
-                    <h2 class="titulos-item">Hola, mi nombre es Hailey</h2>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit officia quo optio assumenda, aut officiis nemo. At est ab, ipsum sunt neque, commodi alias quae nam cumque inventore saepe?
-                    </p>
+        <div class="row">
+            <div class="text-equipo">
+                <h1 class="titulo">Nuestro equipo</h1>
+                <p class="parrafo">Nuestro grupo de trabajo que darle vida a nuestros diseños</p>
+            </div>
+            <div class="nuestro-equipo container">
+                <div class="equipo-item col">
+                        <img src="./img/perfil2.jpg" alt="perfil">
+                        <h2 class="titulos-item">Hola, mi nombre es Hailey</h2>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit officia quo optio assumenda, aut officiis nemo. At est ab, ipsum sunt neque, commodi alias quae nam cumque inventore saepe?
+                        </p>
                 </div>
-                <div class="equipo-item">
-                    <img src="./img/perfil.jpg" alt="perfil">
-                    <h2 class="titulos-item">Hola, mi nombre es justin</h2>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit officia quo optio assumenda, aut officiis nemo. At est ab, ipsum sunt neque, commodi alias quae nam cumque inventore saepe?
-                    </p>
+                <div class="equipo-item col">
+                        <img src="./img/perfil.jpg" alt="perfil">
+                        <h2 class="titulos-item">Hola, mi nombre es justin</h2>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit officia quo optio assumenda, aut officiis nemo. At est ab, ipsum sunt neque, commodi alias quae nam cumque inventore saepe?
+                        </p>
                 </div>
+            </div>
         </div>
     </section>
     
     <!-- footer -->
-    <footer>
-        <div class="footer-cuerpo">
+    <footer class="footer">
+        <div class="footer-cuerpo container">
             <div class="footer-seccion">
                 <h4 class="subtitulo">Información</h4>
                 <ul class="footer-lista">
@@ -122,5 +133,6 @@
         </div>
     </footer>
     
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -25,6 +25,8 @@
     justify-content: space-around;
     list-style: none;
     color: #F5F3F5;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-item{
@@ -44,9 +46,9 @@
 
 /* seccion de portada */
 
-.portada img{
+.foto{
     width: 100%;
-    height: auto;
+    height: 700px;
 }
 
 /* seccion presentación */
@@ -54,14 +56,14 @@
 .seccion-principal{
     display: flex;
     justify-content: center;
+    background-color: #588068;
+    padding: 10px 0;
 }
 
 .presentacion{
-    background-color: #588068;
     color: #f5f3f5;
     display: flex;
     flex-direction: column;
-    padding: 30px 30px;
 }
 
 .titulo{
@@ -144,12 +146,20 @@
 
 /* footer */
 
+.footer{
+    background-color: #E5B0A4;
+    color: #F5F3F5;
+}
+
 .footer-cuerpo{
     display: flex;
     justify-content: space-around;
-    padding: 35px 0;
-    background-color: #E5B0A4;
-    color: #F5F3F5;
+    padding: 20px 0;
+}
+
+.footer-lista{
+    margin: 0;
+    padding: 0;
 }
 
 .footer-item{
