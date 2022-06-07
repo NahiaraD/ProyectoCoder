@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* menu de la pagina */
+#menu{
+    background-color: #E5B0A4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img{
+    max-height: 120px;
+}
+
+.menu-lista{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: #F5F3F5;
+}
+
+.menu-item{
+    padding: 0 15px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-item a:hover{
+    transition: 0.5s ease-in-out;
+    color: #1F3B2C;
+}
+
+/* seccion de portada */
+
+.portada img{
+    width: 100%;
+    height: auto;
+}
+
+/* seccion presentación */
+
+.seccion-principal{
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion{
+    background-color: #588068;
+    color: #f5f3f5;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+
+.titulo{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.parrafo{
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* seccion como trabajamos */
+
+.seccion-desing{
+    background-color: #9D8A76;
+    color: #f5f3f5;
+}
+
+.como-trabajamos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contenedor-desing{
+    display: flex;
+    justify-content: space-between;
+}
+
+.desing-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.desing-item img{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* seccion equipo */
+
+.seccion-equipo{
+    background-color: #1F3B2C;
+    color: #f5f3f5;
+}
+
+.nuestro-equipo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.equipo-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.equipo-item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.equipo-item h2, p{
+    margin: 10px 0;
+}
+
+.equipo-item p{
+    padding: 0 15px;
+}
+
+
+/* footer */
+
+.footer-cuerpo{
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0;
+    background-color: #E5B0A4;
+    color: #F5F3F5;
+}
+
+.footer-item{
+    list-style: none;
+}
+
+.footer-item{
+    padding: 10px 0;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: #f5f3f5;
+    font-size: 15px;
+}
+
+.footer-item a:hover{
+    transition: 0.5s ease-in-out;
+    color: #1F3B2C;
+}
+
+/* vista nuestros diseños */
+
+.all-design{
+    background-color: #588068;
+    color: #f5f3f5;
+}
+
+.design-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.design-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+  
+.design-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: minmax(350px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.transparent{
+    opacity: 0;
+}
+
+
+
+/* productos */
+
+.productos-div{
+    background-color: #9D8A76;
+    color: #f5f3f5;
+}
+
+.contenedor-productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.productos-item img{
+    height: 500px;
+    width: 350px;
+    border-radius: 4px;
+}
+
+.titulos-item{
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* contacto */
+
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contacto{
+    background-color: #588068;
+    padding: 10px;
+    color: #f5f3f5;
+}
+
+.content{
+    margin-right: auto;
+    padding: 1.5em;
+    color: #fff;
+    background: #1F3B2C;
+
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form{
+    background: #9D8A76;
+}
+
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #bbbbbb;
+    color: #fff;
+    font-family: 'Roboto Regular' !important;
+}
+
+.contact-form form button {
+    background: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    cursor: pointer;
+}
