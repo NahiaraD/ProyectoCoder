@@ -3,17 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 
 /* menu de la pagina */
-#menu{
+
+header{
     background-color: #E5B0A4;
+}
+
+#menu{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 
 .logo img{
@@ -221,10 +239,11 @@
 
 /* productos */
 
-.productos-div{
+.seccion-producto{
     background-color: #9D8A76;
     color: #f5f3f5;
 }
+
 
 .contenedor-productos{
     display: flex;
@@ -312,4 +331,99 @@
 .contact-form form button:hover,
 .contact-form form button:focus {
     cursor: pointer;
+}
+
+/* medias (version mobile) */
+
+@media (max-width: 767px){
+
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .checkbtn{
+        display: block;
+        padding: 0 10px;
+    }
+
+    .menu-lista{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E5B0A4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .menu-item{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .menu-item a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .menu-lista{
+        left:0;
+    }
+
+    .logo{
+        padding: 0 10px;
+    }
+
+    .foto{
+        height: auto;
+        width: 100%;
+    }
+
+    .parrafo{
+        font-size: 15px;
+    }
+
+    .contenedor-desing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nuestro-equipo{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+    }
+
+    .footer-cuerpo {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .footer-seccion{
+        padding: 10px 15px;
+    }
+
+    /* vista productos */
+
+    .contenedor-productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* contacto */
+
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
